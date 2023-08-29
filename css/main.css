@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #191919;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: #191919;
+  text-transform: capitalize;
+}
+
+.row {
+  display: flex;
+  gap: 60px;
+  padding: 20px;
+}
+
+.colmun-1 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.colmun-1 h3 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.colmun-1 input[type="text"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #191919;
+}
+
+.colmun-1 input[type="button"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.colmun-1 input[value="Search"] {
+  background-color: gray;
+  color: white;
+}
+
+.colmun-2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row-1 {
+  font-weight: 700;
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.details {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details h3,
+.details h3 span,
+.details p,
+.details p span {
+  color: #191919;
+  margin-bottom: 10px;
+}
+
+.image-today {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+
+.image-today img {
+  width: 150px;
+}
+
+.row-2 {
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.day p,
+.day p span {
+  color: white;
+}
+
+.day img {
+  width: 100px;
+}
