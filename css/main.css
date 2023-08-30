@@ -19,16 +19,40 @@ h1 {
   text-transform: capitalize;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    width: 100%;
+  }
+}
+
 .row {
   display: flex;
   gap: 60px;
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .colmun-1 {
   display: flex;
   flex-direction: column;
   width: 25%;
+}
+
+@media (max-width: 768px) {
+  .colmun-1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .colmun-1 {
+    width: 35%;
+  }
 }
 
 .colmun-1 h3 {
@@ -65,6 +89,18 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .colmun-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .colmun-2 {
+    width: 65%;
+  }
 }
 
 .row-1 {
@@ -111,14 +147,31 @@ h1 {
   background-color: gray;
   border-radius: 5px;
   padding: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .row-2 {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .row-2 {
+    grid-template-columns: auto auto;
+  }
 }
 
 .day {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid blanchedalmond;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  text-align: center;
 }
 
 .day p,
